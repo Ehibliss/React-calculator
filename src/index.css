@@ -3,10 +3,7 @@ body {
   font-family: "Segoe UI", sans-serif, Arial;
 }
 /* dark mode */
-.dark {
-  background: #121212;
-  background: linear-gradient(to right, #121212, #1f1f1f);
-}
+
 .calculator-container.dark {
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
 }

@@ -8,26 +8,26 @@ body {
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
 }
 
-.dark .calculator {
+.calculator-container .dark .calculator {
   background: #1e1e1e;
 }
-.dark .display {
+.calculator-container .dark .display {
   background: #2c2c2c;
   color: white;
 }
-.dark .btn {
+.calculator-container .dark .btn {
   background: #333;
   color: white;
 }
 
-.dark .operator {
+.calculator-container .dark .operator {
   background: #ff9500;
 }
 
-.dark .equal {
+.calculator-container .dark .equal {
   background: #4cd137;
 }
-.dark .control {
+.calculator-container .dark .control {
   background: #ef4444;
 }
 .theme-toggle {

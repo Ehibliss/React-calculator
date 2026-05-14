@@ -1,28 +1,67 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif, Arial;
-  background: #13141e;
+  background: #41424e;
+  background: linear-gradient(to right, #d1ede2, #303233);
   color: #ffff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+/* dark mode */
+.dark {
+  background: #121212;
+}
+
+.dark .calculator {
+  background: #1e1e1e;
+}
+.dark .display {
+  background: #2c2c2c;
+  color: white;
+}
+.dark .btn {
+  background: #333;
+  color: white;
+}
+
+.dark .operator {
+  background: #ff9500;
+}
+
+.dark .equal {
+  background: #4cd137;
+}
+.dark .control {
+  background: #ef4444;
+}
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .calculator-container {
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .calculator {
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 30px;
-  background-color: #0b0a16;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  background-color: #ffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   width: 320px;
 }
 .display {
-  background-color: #111637;
-  color: #638efa;
+  background-color: #f8fafc;
+  color: #0f172a;
   font-size: 2rem;
   padding: 20px;
   border-radius: 12px;
@@ -36,35 +75,33 @@ body {
   gap: 12px;
 }
 .btn {
-  background-color: #141b3b;
-  color: #ffff;
+  background-color: #e2e8f0;
+  color: #0f172a;
   font-size: 1.2rem;
   border: none;
   border-radius: 10px;
   padding: 18px;
-  transition: background-color 0.2s ease;
+  transition: 0.2s ease;
 }
 .btn:hover {
-  background-color: #111834;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
-.btn.operator {
-  background-color: #09183f;
+.operator {
+  background-color: #3b82f6;
+  color: #ffff;
 }
-.btn.operator:hover {
-  background-color: #0d1e47;
+
+.control {
+  background-color: #ef4444;
+  color: #ffff;
 }
-.btn.control {
-  background-color: #131313;
+
+.equal {
+  background-color: #22c55e;
+  color: #ffff;
 }
-.btn.control:hover {
-  background-color: #151515;
-}
-.btn.equal {
-  background-color: #0b152f;
-}
-.btn.equal:hover {
-  background-color: #132553;
-}
-.btn.zero {
+
+.zero {
   grid-column: span 2;
 }

@@ -25,7 +25,11 @@ const App = () => {
     }
   };
   return (
-    <div className={`calculator-container ${darkMode ? "dark" : ""}`}>
+    <div
+      className={
+        darkMode ? "calculator-container dark" : "calculator-container"
+      }
+    >
       <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
         {darkMode ? " Light Mode" : "Dark Mode"}
       </button>

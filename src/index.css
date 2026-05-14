@@ -1,17 +1,14 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif, Arial;
-  background: #41424e;
-  background: linear-gradient(to right, #d1ede2, #303233);
-  color: #ffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 /* dark mode */
 .dark {
   background: #121212;
+  background: linear-gradient(to right, #121212, #1f1f1f);
+}
+.calculator-container.dark {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
 }
 
 .dark .calculator {
@@ -47,10 +44,13 @@ body {
 }
 
 .calculator-container {
-  background-color: transparent;
+  background: #41424e;
+  background: linear-gradient(to right, #d1ede2, #303233);
+  color: #ffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .calculator {
   border-radius: 20px;

@@ -1,6 +1,9 @@
 import { useState } from "react";
+
 const App = () => {
   const [input, setInput] = useState("");
+  // darkMode
+  const [darkMode, setDarkMode] = useState(false);
   // handle click
   const handleClick = (value) => {
     setInput((prev) => prev + value);
@@ -22,7 +25,10 @@ const App = () => {
     }
   };
   return (
-    <div className="calculator-container">
+    <div className={`calculator-container ${darkMode ? "dark" : ""}`}>
+      <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? " Light Mode" : "Dark Mode"}
+      </button>
       <div className="calculator">
         <div className="display">{input || "0"} </div>
 
